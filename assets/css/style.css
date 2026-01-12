@@ -1,0 +1,204 @@
+.hero{
+  background: linear-gradient(to right,#4a00e0,#8e2de2);
+  color:white;
+  padding:100px;
+}
+
+/* Styling untuk Hero Section */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../img/hero-bg.jpg'); /* Ganti dengan BG kamu */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+}
+
+/* Mengatur ukuran gambar galeri agar seragam */
+.gallery-img {
+    width: 100%;
+    height: 250px; /* Tentukan tinggi tetap */
+    object-fit: cover; /* Memastikan gambar tidak gepeng */
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animasi halus */
+    cursor: pointer;
+}
+
+/* Efek Hover (Animasi & Shadow) */
+.gallery-img:hover {
+    transform: translateY(-10px); /* Gambar sedikit naik */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Shadow lebih tebal saat hover */
+}
+
+/* Mempercantik Modal */
+.modal-content {
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.modal-header {
+    background-color: #f8f9fa;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+body{
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.navbar{
+  background: rgba(0,0,0,0.85);
+}
+
+.hero{
+  min-height:100vh;
+  background: linear-gradient(to right, #4a00e0, #8e2de2);
+  color:white;
+  padding-top:120px;
+}
+
+.hero h1{
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+}
+
+.visi-section{
+  background:#f8f9fa;
+}
+
+.visi-list{
+  list-style:none;
+  padding:0;
+}
+
+.visi-list li{
+  background:white;
+  padding:12px 18px;
+  margin-bottom:10px;
+  border-left:5px solid #ffc107;
+  border-radius:6px;
+}
+
+.jadwal-card{
+  background:white;
+  padding:30px;
+  border-radius:12px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+
+.gallery-img{
+  width:100%;
+  height:260px;
+  object-fit:cover;
+  border-radius:12px;
+  transition:transform 0.3s;
+}
+
+.gallery-img:hover{
+  transform:scale(1.05);
+}
+
+.footer{
+  background:#212529;
+  color:white;
+  padding:20px 0;
+}
+
+
+html{
+  scroll-behavior: smooth;
+}
+
+.navbar .nav-link{
+  font-weight:500;
+  margin:0 6px;
+}
+
+.navbar .nav-link:hover{
+  color:#ffc107 !important;
+}
+
+
+:root {
+    --primary: #4361ee;
+    --bg-light: #f8f9fc;
+    --sidebar-dark: #1e293b;
+    --glass: rgba(255, 255, 255, 0.9);
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-light);
+    color: #334155;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 260px;
+    height: 100vh;
+    position: fixed;
+    background: var(--sidebar-dark);
+    transition: 0.3s;
+    z-index: 1000;
+    padding: 1.5rem;
+    overflow-y: auto;
+}
+.sidebar::-webkit-scrollbar { width: 6px; }
+.sidebar::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.3); border-radius: 10px; }
+.sidebar::-webkit-scrollbar-track { background: transparent; }
+
+.sidebar.hide { transform: translateX(-260px); }
+
+.sidebar-brand {
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sidebar a {
+    color: #94a3b8;
+    padding: 12px 15px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-bottom: 6px;
+    transition: 0.2s;
+}
+
+.sidebar a:hover,
+.sidebar a.active { background: rgba(255,255,255,0.1); color: #fff; }
+
+/* MAIN CONTENT */
+.main-content { margin-left: 260px; transition: 0.3s; min-height: 100vh; }
+.main-content.full { margin-left: 0; }
+
+/* TOP NAV */
+.top-nav {
+    background: var(--glass);
+    backdrop-filter: blur(8px);
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #e2e8f0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.hamburger { font-size: 1.5rem; cursor: pointer; }
+
+/* CARD */
+.card-custom { background: #fff; border-radius: 16px; box-shadow: 0 4px 6px rgba(0,0,0,0.08); }
+
+/* TABLE */
+.table thead { background: #f1f5f9; }
+.table thead th { font-size: 0.75rem; text-transform: uppercase; color: #64748b; border: none; }
+.badge-pill { padding: 6px 12px; border-radius: 50px; font-size: 0.75rem; font-weight: 600; }
+.btn-action { padding: 8px; border-radius: 8px; border: none; }
+
+
