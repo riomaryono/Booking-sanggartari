@@ -225,11 +225,7 @@ if (!$d) {
             <tr>
                 <td>Subtotal</td>
                 <td class="text-right">Rp <?= number_format($d['total_harga'], 0, ',', '.') ?></td>
-            </tr>
-            <tr>
-                <td>Pajak / Biaya Lain</td>
-                <td class="text-right">Rp 0</td>
-            </tr>
+            </tr>        
             <tr class="grand-total">
                 <td>TOTAL BAYAR</td>
                 <td class="text-right">Rp <?= number_format($d['total_harga'], 0, ',', '.') ?></td>
